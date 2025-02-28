@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join our coding club to explore, create, and collaborate on exciting projects!">
+    <meta property="og:title" content="Coding Club">
+    <meta property="og:description" content="Join our coding club to explore, create, and collaborate on exciting projects!">
+    <meta property="og:image" content="./img/logo.jpg.jpg.jpg">
+    <title>Coding Club</title>
+    <link rel="icon" href="./img/logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header class="welcome">
+        <h1>Welcome to the Coding Club</h1>
+        <p>Join us to explore the world of coding and technology!</p>
+
+        <div class="slideshow-container">
+            <img class="slides" src="https://wondercoders.org/wp-content/uploads/2019/06/coding-club-4.jpg" alt="Group of people coding together">
+            <img class="slides" src="https://wondercoders.org/wp-content/uploads/2019/06/coding-club-3.jpg" alt="Coding workshop">
+            <img class="slides" src="https://i.imgur.com/B8pAAz8.jpg" alt="Programming on a laptop">
+            <img class="slides" src="https://codeop.tech/wp-content/uploads/2023/12/CodeOp_FS32-10.jpg" alt="Laptop and code on screen">
+        </div>
+
+        <nav class="options">
+            <a href="javascript:void(0);" class="option" onclick="navigate('about')">About</a>
+            <a href="javascript:void(0);" class="option" onclick="navigate('events')">Events</a>
+            <a href="javascript:void(0);" class="option" onclick="navigate('projects')">Projects</a>
+            <a href="javascript:void(0);" class="option" onclick="navigate('contact')">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about" class="screen">
+            <h2>About Us</h2>
+            <p>We are a group of passionate programmers eager to learn, create, and collaborate! Our mission is to empower young talent by providing a nurturing environment where ideas flourish, skills are honed, and dreams take shape.</p>
+            <p>At the heart of our club is a dedicated board that steers our vision and ensures the club runs smoothly. Meet the team of leaders who guide us on our journey to excellence:</p>
+            
+            <div class="board-members">
+              <div class="member">
+                <img src="./img/president.jpeg" alt="Vusi Kunene Matlou, President">
+                <h3>Vusi Kunene Matlou</h3>
+                <p><strong>President</strong> – Vusi is the visionary leader of our club. With his extensive experience in software development and his passion for innovation, he inspires us to push boundaries and achieve greatness.</p>
+              </div>
+              <div class="member">
+                <img src="./img/vicePresident.jpeg" alt="Tanatswanashe Mthembu, Vice President">
+                <h3>Tanatswanashe Mthembu,</h3>
+                <p><strong>Vice President</strong> – Tanatswanashe supports the president in executing our strategic initiatives. Known for his innovative approach, he leads many of our technical projects and fosters a spirit of creativity throughout the club.</p>
+              </div>
+              <div class="member">
+                <img src="./img/eventsPlanner.jpeg" alt="Vuyisile Shokane, Secretary">
+                <h3>Vuyisile Shokane</h3>
+                <p><strong>Event Planner</strong> – Vuyisile is the organizational powerhouse of our team. She manages all communications, coordinates meetings, and ensures that every event runs seamlessly, keeping us connected and informed.</p>
+              </div>
+              <div class="member">
+                <img src="./img/treasurer.jpeg" alt="Thoriso Dibatana, Treasurer">
+                <h3>Thoriso Dibatana</h3>
+                <p><strong>Treasurer</strong> – Thoriso oversees our financial strategies, ensuring that every project is well-funded and every expenditure is carefully planned. His attention to detail keeps our club on a sound financial footing.</p>
+              </div>
+            </div>
+          </section>
+          
+
+        <!-- Events Section -->
+        <section id="events" class="screen">
+            <h2>🚀 Upcoming Events</h2>
+            <p>Stay tuned for exciting opportunities to learn, compete, and collaborate with fellow coding enthusiasts!</p>
+        
+            <div class="event">
+                <h3>💻 Hackathon - Feb 28, 2025</h3>
+                <p>Join us for an electrifying 24-hour coding marathon! Work in teams, solve real-world problems, and compete for amazing prizes.</p>
+            </div>
+        
+            <div class="event">
+                <h3>🤖 AI Workshop - March 5, 2025</h3>
+                <p>Discover the power of Artificial Intelligence! Learn the fundamentals of machine learning, neural networks, and how to build your own AI models.</p>
+            </div>
+        
+            <div class="event">
+                <h3>🎮 Game Development Bootcamp - March 15, 2025</h3>
+                <p>Ever wanted to build your own game? Join our bootcamp and get hands-on experience with game engines like Unity and Unreal Engine.</p>
+            </div>
+        
+            <div class="event">
+                <h3>🌍 Open Source Contribution Day - March 25, 2025</h3>
+                <p>Learn how to contribute to open-source projects, collaborate with developers worldwide, and improve your GitHub portfolio!</p>
+            </div>
+        
+            <div class="event">
+                <h3>🎤 Tech Talk Series - April 10, 2025</h3>
+                <p>Gain insights from industry experts as they share their experiences, career advice, and latest tech trends.</p>
+            </div>
+        
+            <p>📅 Don't miss out—mark your calendars and be part of these exciting events!</p>
+        </section>
+        
+
+        <!-- Projects Section -->
+        <section id="projects" class="screen">
+            <h2>Our Projects</h2>
+            <p>At our coding club, we believe in learning by doing. Here are some of the exciting projects we've worked on:</p>
+            
+            <div class="project">
+                <h3>🎮 Snake Game</h3>
+                <p>Test your reflexes with our classic Snake Game! Built using JavaScript and HTML5 Canvas, this game is a fun way to learn about game logic and animation.</p>
+                <canvas id="snake-game" width="500" height="500"></canvas>
+            </div>
+        
+            <div class="project">
+                <h3>🌐 Personal Portfolio Websites</h3>
+                <p>Our members have designed and developed personal portfolio websites to showcase their skills, projects, and achievements. These sites are built with HTML, CSS, and JavaScript, featuring interactive elements and responsive design.</p>
+            </div>
+        
+            <div class="project">
+                <h3>🤖 AI Chatbot</h3>
+                <p>We've developed an AI-powered chatbot that can assist users with coding-related questions. Using Python and Natural Language Processing (NLP), the chatbot provides real-time responses and learns from user interactions.</p>
+            </div>
+        
+            <div class="project">
+                <h3>📊 Data Visualization Dashboard</h3>
+                <p>Our team built a dynamic dashboard that visualizes data trends using Python, R, and Power BI. This project helps users analyze and interpret large datasets efficiently.</p>
+            </div>
+        
+            <div class="project">
+                <h3>📱 Mobile To-Do List App</h3>
+                <p>We created a mobile-friendly To-Do List app using React Native. It allows users to manage tasks efficiently with reminders and progress tracking.</p>
+            </div>
+        
+            <p>We are constantly working on new and exciting projects. Join us and be part of the innovation!</p>
+        </section>
+        
+
+        <!-- Contact Section -->
+        <section id="contact" class="screen">
+            <h2>Contact Us</h2>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.instagram.com/codingclub404?igsh=MTB4amQzNWxnZDgzeg=="><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="http://tiktok.com/@codingclub404"><i class="fab fa-tiktok"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/coding-club-3841b1349"><i class="fas fa-envelope"></i></a>
+                <a target="_blank" href="https://github.com/CODINGCLUB404"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Coding Club. All rights reserved.</p>
+        <div class="social-icons">
+            <a target="_blank" href="https://www.instagram.com/codingclub404?igsh=MTB4amQzNWxnZDgzeg=="><i class="fab fa-instagram"></i></a>
+            <a target="_blank" href="http://tiktok.com/@codingclub404"><i class="fab fa-tiktok"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/coding-club-3841b1349"><i class="fas fa-envelope"></i></a>
+            <a target="_blank" href="https://github.com/CODINGCLUB404"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
